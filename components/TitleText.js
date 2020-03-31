@@ -1,7 +1,9 @@
 import React from "react";
 import { Text, StyleSheet, processColor } from "react-native";
 
-const BodyText = props => <Text style={{...styles.title, ...props.style}}>{props.children}</Text>;
+const TitleText = props => (
+  <Text style={{ ...styles.title, ...props.style }}>{props.children}</Text>
+);
 
 const styles = StyleSheet.create({
   title: {
@@ -10,4 +12,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default BodyText;
+export default TitleText;
